@@ -1,4 +1,4 @@
-#Program that check if entered number is a prime.
+#Program that calculate approximation of square root of entered number.
 
 x = float(input('Please enter a positive number: ')) #Wait for number from user and assign to x.
 
