@@ -1,12 +1,23 @@
-#Program that reads in text file.
+#Program 9 that reads in text file and output every second line.
 
-txt = open('Aladdin.txt', 'r')
-m = []
-txt_lenght = len(txt.readlines())
-print(txt_lenght)
-lines = txt.readline()
-row = lines.split()
-for x in range(txt_lenght):
-    m.append(row[1])
-print(m)
-txt.close()
+#Include sys and regular expression moduls
+import sys
+import re
+#Take command line argument and assign to string tit
+tit = sys.argv[1]
+#Remove text file extention
+tit = tit.rstrip('.txt')
+#Using regexp to get rid of hyphen
+tit = re.sub('-', ' ', tit)
+#Display file name as a title and capitalize first letter of each word in title
+print('Title:', tit.title())
+
+#Open text file pointed in command line  
+with open(sys.argv[1], 'r') as txt:
+    #Create loop to display every second line of text file starting and including first line
+    for i, l in enumerate(txt, start=1):
+        if i%2 == 0:
+            print(l)
+
+
+
