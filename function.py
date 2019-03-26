@@ -16,7 +16,7 @@ plt.plot(x,cur1 )
 plt.plot(x,cur2 )
 plt.plot(x,cur3 )
 #Create axis labels
-plt.xlabel('Range')
+plt.xlabel("Range")
 plt.ylabel("Funtions")
 #Create legend with functions description
 plt.legend(["x","x^2","2^x"])
