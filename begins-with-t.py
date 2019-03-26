@@ -1,8 +1,9 @@
-#Program that checks if day begins with letter T
+#Program 2 that checks if day begins with letter T
 
-import datetime #Assign curent date and time 
-
-if (datetime.datetime.today().weekday() == 1 or datetime.datetime.today().weekday() == 3): # Check if todays day is Tuesday or Thursday
+#Use datetime module
+import datetime  
+#Check if today's day is Tuesday or Thursday
+if (datetime.datetime.today().weekday() == 1 or datetime.datetime.today().weekday() == 3): 
   print("Yes - today begins with a T")
 else:
   print("No - today does not begin with a T")

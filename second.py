@@ -1,15 +1,15 @@
-#Program 9 that reads in text file and output every second line.
+#Program 9 that reads in text file and output every second line
 
-#Include sys and regular expression moduls
+#Include sys and regular expression modules
 import sys
 import re
 #Take command line argument and assign to string tit
 tit = sys.argv[1]
-#Remove text file extention
-tit = tit.rstrip('.txt')
-#Using regexp to get rid of hyphen
-tit = re.sub('-', ' ', tit)
-#Display file name as a title and capitalize first letter of each word in title
+#Remove "txt" text file extention
+tit = tit.rstrip(".txt")
+#Use regex to get rid of hyphen
+tit = re.sub("-", " ", tit)
+#Display file name as a title and make a capitalization of the first letter of each word in the title
 print('Title:', tit.title())
 
 #Open text file pointed in command line  
